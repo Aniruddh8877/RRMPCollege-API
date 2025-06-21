@@ -23,8 +23,7 @@ namespace Project
             this.StaffLogins = new HashSet<StaffLogin>();
             this.StudentRegistrations = new HashSet<StudentRegistration>();
         }
-
-        //public  int staffLoginId { get; set; }
+    
         public int StaffId { get; set; }
         public string StaffName { get; set; }
         public string StaffCode { get; set; }

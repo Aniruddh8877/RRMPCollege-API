@@ -11,7 +11,6 @@ namespace ProjectAPI.Controllers.api
     [RoutePrefix("api/StudentRegistration")]
     public class StudentRegistrationController : ApiController
     {
-
         [HttpPost]
         [Route("DashboardCount")]
         public ExpandoObject DashboardCount(RequestModel requestModel)
@@ -24,12 +23,31 @@ namespace ProjectAPI.Controllers.api
                 AppData.CheckAppKey(dbContext, AppKey, (byte)KeyFor.Admin);
 
                 var today = DateTime.Today;
+                var decryptData = CryptoJs.Decrypt(requestModel.request, CryptoJs.key, CryptoJs.iv);
+                StudentRegistration model = JsonConvert.DeserializeObject<StudentRegistration>(decryptData);
+                int StaffRollId = dbContext.StaffLoginRoles.First(x => x.StaffLoginId == model.CreatedBy).RoleId;
 
-                var total = dbContext.StudentRegistrations.Count();
-                var todayCount = dbContext.StudentRegistrations.Count(x => x.RegsitrationDate >= today);
+                    
+                if (StaffRollId == 0)
+                {
+                    response.Message = "Invalid CreatedBy / StaffLoginId";
+                    return response;
+                }
 
-                response.TotalRegistrations = total;
-                response.TodayRegistrations = todayCount;
+                if (StaffRollId == 5) // Admin
+                {
+                    response.TotalRegistrations = dbContext.StudentRegistrations.Count();
+                    response.TodayRegistrations = dbContext.StudentRegistrations.Count(x => x.RegsitrationDate >= today);
+                }
+                else // Institute login
+                {
+                    response.TotalRegistrations = dbContext.StudentRegistrations
+                        .Count(x => x.CreatedBy == model.CreatedBy);
+
+                    response.TodayRegistrations = dbContext.StudentRegistrations
+                        .Count(x => x.CreatedBy == model.CreatedBy && x.RegsitrationDate >= today);
+                }
+
                 response.Message = ConstantData.SuccessMessage;
             }
             catch (Exception ex)
@@ -38,6 +56,8 @@ namespace ProjectAPI.Controllers.api
             }
             return response;
         }
+
+
 
         [HttpPost]
         [Route("StudentList")]
@@ -57,6 +77,7 @@ namespace ProjectAPI.Controllers.api
 
                 var AdminList = (from s in dbContext.StudentRegistrations
                                  join staff in dbContext.StaffLogins on s.StaffId equals staff.StaffId
+                                 where (model.StaffId == 0||model.StaffId == s.StaffId)
                                  orderby s.StudentName
                                  select new
                                  {
@@ -119,6 +140,8 @@ namespace ProjectAPI.Controllers.api
             }
             return response;
         }
+
+
         [HttpPost]
         [Route("saveStudent")]
         public ExpandoObject saveStudent(RequestModel requestModel)

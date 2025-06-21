@@ -250,7 +250,7 @@
     <Property Name="FatherName" Type="nvarchar" MaxLength="150" Nullable="false" />
     <Property Name="AadharNo" Type="nvarchar" MaxLength="12" />
     <Property Name="MobileNo" Type="nvarchar" MaxLength="10" Nullable="false" />
-    <Property Name="WhatsAppNo" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="WhatsAppNo" Type="nvarchar" MaxLength="50" />
     <Property Name="Education" Type="tinyint" Nullable="false" />
     <Property Name="StudentCode" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="RegsitrationDate" Type="datetime" Nullable="false" />

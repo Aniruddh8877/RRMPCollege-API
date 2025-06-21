@@ -37,6 +37,7 @@ namespace ProjectAPI.Controllers.api
                             {
                                 d1.StaffLoginId,
                                 d1.StaffId,
+                                subStaffLoginRole.First().RoleId,
                                 d2.StaffName,
                                 d1.UserName,
                                 d1.LoginPassword,

@@ -449,7 +449,7 @@
     <Property Name="FatherName" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
     <Property Name="AadharNo" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
     <Property Name="MobileNo" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
-    <Property Name="WhatsAppNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="WhatsAppNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="Education" Type="Byte" Nullable="false" />
     <Property Name="StudentCode" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="RegsitrationDate" Type="DateTime" Nullable="false" Precision="3" />

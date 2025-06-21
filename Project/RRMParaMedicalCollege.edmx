@@ -255,7 +255,7 @@
           <Property Name="FatherName" Type="nvarchar" MaxLength="150" Nullable="false" />
           <Property Name="AadharNo" Type="nvarchar" MaxLength="12" />
           <Property Name="MobileNo" Type="nvarchar" MaxLength="10" Nullable="false" />
-          <Property Name="WhatsAppNo" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="WhatsAppNo" Type="nvarchar" MaxLength="50" />
           <Property Name="Education" Type="tinyint" Nullable="false" />
           <Property Name="StudentCode" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="RegsitrationDate" Type="datetime" Nullable="false" />
@@ -1224,7 +1224,7 @@
           <Property Name="FatherName" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
           <Property Name="AadharNo" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
           <Property Name="MobileNo" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
-          <Property Name="WhatsAppNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="WhatsAppNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Education" Type="Byte" Nullable="false" />
           <Property Name="StudentCode" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="RegsitrationDate" Type="DateTime" Nullable="false" Precision="3" />
