@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="RRMParaMedicalCollegeModelStoreContainer" CdmEntityContainer="RRMParaMedicalCollegeEntities">
+    <EntitySetMapping Name="Apps">
+      <EntityTypeMapping TypeName="RRMParaMedicalCollegeModel.App">
+        <MappingFragment StoreEntitySet="App">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="KeyFor" ColumnName="KeyFor" />
+          <ScalarProperty Name="AppKey" ColumnName="AppKey" />
+          <ScalarProperty Name="AppId" ColumnName="AppId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Backups">
+      <EntityTypeMapping TypeName="RRMParaMedicalCollegeModel.Backup">
+        <MappingFragment StoreEntitySet="Backup">
+          <ScalarProperty Name="BackupDatabase" ColumnName="BackupDatabase" />
+          <ScalarProperty Name="ErrorMessage" ColumnName="ErrorMessage" />
+          <ScalarProperty Name="BackupStatus" ColumnName="BackupStatus" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="BackupFile" ColumnName="BackupFile" />
+          <ScalarProperty Name="BackupId" ColumnName="BackupId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cities">
+      <EntityTypeMapping TypeName="RRMParaMedicalCollegeModel.City">
+        <MappingFragment StoreEntitySet="City">
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CityName" ColumnName="CityName" />
+          <ScalarProperty Name="StateId" ColumnName="StateId" />
+          <ScalarProperty Name="CityId" ColumnName="CityId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Companies">
+      <EntityTypeMapping TypeName="RRMParaMedicalCollegeModel.Company">
+        <MappingFragment StoreEntitySet="Company">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Logo" ColumnName="Logo" />
+          <ScalarProperty Name="LogoPNG" ColumnName="LogoPNG" />
+          <ScalarProperty Name="Website" ColumnName="Website" />
+          <ScalarProperty Name="AlternateNo" ColumnName="AlternateNo" />
+          <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="PinCode" ColumnName="PinCode" />
+          <ScalarProperty Name="StateName" ColumnName="StateName" />
+          <ScalarProperty Name="DistrictName" ColumnName="DistrictName" />
+          <ScalarProperty Name="CityName" ColumnName="CityName" />
+          <ScalarProperty Name="CompanyAddress" ColumnName="CompanyAddress" />
+          <ScalarProperty Name="ShortName" ColumnName="ShortName" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Databases">
+      <EntityTypeMapping TypeName="RRMParaMedicalCollegeModel.Database">
+        <MappingFragment StoreEntitySet="Database">
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="DatabaseName" ColumnName="DatabaseName" />
+          <ScalarProperty Name="DatabaseId" ColumnName="DatabaseId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Departments">
+      <EntityTypeMapping TypeName="RRMParaMedicalCollegeModel.Department">
+        <MappingFragment StoreEntitySet="Department">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
+          <ScalarProperty Name="DepartmentId" ColumnName="DepartmentId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Designations">
+      <EntityTypeMapping TypeName="RRMParaMedicalCollegeModel.Designation">
+        <MappingFragment StoreEntitySet="Designation">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="DesignationName" ColumnName="DesignationName" />
+          <ScalarProperty Name="DesignationId" ColumnName="DesignationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Districts">
+      <EntityTypeMapping TypeName="RRMParaMedicalCollegeModel.District">
+        <MappingFragment StoreEntitySet="District">
+          <ScalarProperty Name="StateId" ColumnName="StateId" />
+          <ScalarProperty Name="DistrictName" ColumnName="DistrictName" />
+          <ScalarProperty Name="DistrictId" ColumnName="DistrictId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LoginLogs">
+      <EntityTypeMapping TypeName="RRMParaMedicalCollegeModel.LoginLog">
+        <MappingFragment StoreEntitySet="LoginLog">
+          <ScalarProperty Name="IMEINo" ColumnName="IMEINo" />
+          <ScalarProperty Name="GoogleLocation" ColumnName="GoogleLocation" />
+          <ScalarProperty Name="UserType" ColumnName="UserType" />
+          <ScalarProperty Name="LastUpdatedOn" ColumnName="LastUpdatedOn" />
+          <ScalarProperty Name="LoginTime" ColumnName="LoginTime" />
+          <ScalarProperty Name="LoginResult" ColumnName="LoginResult" />
+          <ScalarProperty Name="ReferrerUrl" ColumnName="ReferrerUrl" />
+          <ScalarProperty Name="IPAddress" ColumnName="IPAddress" />
+          <ScalarProperty Name="LoginDevice" ColumnName="LoginDevice" />
+          <ScalarProperty Name="ClientBrowser" ColumnName="ClientBrowser" />
+          <ScalarProperty Name="LoginPassword" ColumnName="LoginPassword" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="LoginLogId" ColumnName="LoginLogId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Menus">
+      <EntityTypeMapping TypeName="RRMParaMedicalCollegeModel.Menu">
+        <MappingFragment StoreEntitySet="Menu">
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="MenuIcon" ColumnName="MenuIcon" />
+          <ScalarProperty Name="ParentMenuId" ColumnName="ParentMenuId" />
+          <ScalarProperty Name="MenuNo" ColumnName="MenuNo" />
+          <ScalarProperty Name="PageId" ColumnName="PageId" />
+          <ScalarProperty Name="MenuTitle" ColumnName="MenuTitle" />
+          <ScalarProperty Name="MenuId" ColumnName="MenuId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pages">
+      <EntityTypeMapping TypeName="RRMParaMedicalCollegeModel.Page">
+        <MappingFragment StoreEntitySet="Page">
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="PageUrl" ColumnName="PageUrl" />
+          <ScalarProperty Name="PageName" ColumnName="PageName" />
+          <ScalarProperty Name="PageGroupId" ColumnName="PageGroupId" />
+          <ScalarProperty Name="PageId" ColumnName="PageId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PageGroups">
+      <EntityTypeMapping TypeName="RRMParaMedicalCollegeModel.PageGroup">
+        <MappingFragment StoreEntitySet="PageGroup">
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="PageGroupName" ColumnName="PageGroupName" />
+          <ScalarProperty Name="PageGroupId" ColumnName="PageGroupId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="RRMParaMedicalCollegeModel.Role">
+        <MappingFragment StoreEntitySet="Role">
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="RoleTitle" ColumnName="RoleTitle" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RoleMenus">
+      <EntityTypeMapping TypeName="RRMParaMedicalCollegeModel.RoleMenu">
+        <MappingFragment StoreEntitySet="RoleMenu">
+          <ScalarProperty Name="CanCreate" ColumnName="CanCreate" />
+          <ScalarProperty Name="CanDelete" ColumnName="CanDelete" />
+          <ScalarProperty Name="CanEdit" ColumnName="CanEdit" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="MenuId" ColumnName="MenuId" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="RoleMenuId" ColumnName="RoleMenuId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Staffs">
+      <EntityTypeMapping TypeName="RRMParaMedicalCollegeModel.Staff">
+        <MappingFragment StoreEntitySet="Staff">
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="Qualification" ColumnName="Qualification" />
+          <ScalarProperty Name="StaffPhoto" ColumnName="StaffPhoto" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="FatherName" ColumnName="FatherName" />
+          <ScalarProperty Name="StaffType" ColumnName="StaffType" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="JoinDate" ColumnName="JoinDate" />
+          <ScalarProperty Name="FullAddress" ColumnName="FullAddress" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="AlternateNo" ColumnName="AlternateNo" />
+          <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+          <ScalarProperty Name="DepartmentId" ColumnName="DepartmentId" />
+          <ScalarProperty Name="DesignationId" ColumnName="DesignationId" />
+          <ScalarProperty Name="PrincipalName" ColumnName="PrincipalName" />
+          <ScalarProperty Name="StaffCode" ColumnName="StaffCode" />
+          <ScalarProperty Name="StaffName" ColumnName="StaffName" />
+          <ScalarProperty Name="StaffId" ColumnName="StaffId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StaffLogins">
+      <EntityTypeMapping TypeName="RRMParaMedicalCollegeModel.StaffLogin">
+        <MappingFragment StoreEntitySet="StaffLogin">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="LoginPassword" ColumnName="LoginPassword" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="StaffId" ColumnName="StaffId" />
+          <ScalarProperty Name="StaffLoginId" ColumnName="StaffLoginId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StaffLoginRoles">
+      <EntityTypeMapping TypeName="RRMParaMedicalCollegeModel.StaffLoginRole">
+        <MappingFragment StoreEntitySet="StaffLoginRole">
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="StaffLoginId" ColumnName="StaffLoginId" />
+          <ScalarProperty Name="StaffLoginRoleId" ColumnName="StaffLoginRoleId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="States">
+      <EntityTypeMapping TypeName="RRMParaMedicalCollegeModel.State">
+        <MappingFragment StoreEntitySet="State">
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="StateCode" ColumnName="StateCode" />
+          <ScalarProperty Name="StateName" ColumnName="StateName" />
+          <ScalarProperty Name="StateId" ColumnName="StateId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StateMasters">
+      <EntityTypeMapping TypeName="RRMParaMedicalCollegeModel.StateMaster">
+        <MappingFragment StoreEntitySet="StateMaster">
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="StateCode" ColumnName="StateCode" />
+          <ScalarProperty Name="StateName" ColumnName="StateName" />
+          <ScalarProperty Name="StateId" ColumnName="StateId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StudentRegistrations">
+      <EntityTypeMapping TypeName="RRMParaMedicalCollegeModel.StudentRegistration">
+        <MappingFragment StoreEntitySet="StudentRegistration">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="RegsitrationDate" ColumnName="RegsitrationDate" />
+          <ScalarProperty Name="StudentCode" ColumnName="StudentCode" />
+          <ScalarProperty Name="Education" ColumnName="Education" />
+          <ScalarProperty Name="WhatsAppNo" ColumnName="WhatsAppNo" />
+          <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+          <ScalarProperty Name="AadharNo" ColumnName="AadharNo" />
+          <ScalarProperty Name="FatherName" ColumnName="FatherName" />
+          <ScalarProperty Name="StaffId" ColumnName="StaffId" />
+          <ScalarProperty Name="StudentName" ColumnName="StudentName" />
+          <ScalarProperty Name="StudentId" ColumnName="StudentId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

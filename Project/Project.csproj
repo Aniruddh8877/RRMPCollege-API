@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C9661A35-327A-481A-A604-2443329D4982}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Project</RootNamespace>
+    <AssemblyName>Project</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.cs">
+      <DependentUpon>RRMParaMedicalCollege.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppData.cs" />
+    <Compile Include="Backup.cs">
+      <DependentUpon>RRMParaMedicalCollege.tt</DependentUpon>
+    </Compile>
+    <Compile Include="City.cs">
+      <DependentUpon>RRMParaMedicalCollege.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Company.cs">
+      <DependentUpon>RRMParaMedicalCollege.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ConstantData.cs" />
+    <Compile Include="ConstantString.cs" />
+    <Compile Include="CryptoEngine.cs" />
+    <Compile Include="CryptoJs.cs" />
+    <Compile Include="Database.cs">
+      <DependentUpon>RRMParaMedicalCollege.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Department.cs">
+      <DependentUpon>RRMParaMedicalCollege.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Designation.cs">
+      <DependentUpon>RRMParaMedicalCollege.tt</DependentUpon>
+    </Compile>
+    <Compile Include="District.cs">
+      <DependentUpon>RRMParaMedicalCollege.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Enumerator.cs" />
+    <Compile Include="LoginLog.cs">
+      <DependentUpon>RRMParaMedicalCollege.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <DependentUpon>RRMParaMedicalCollege.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModalClasses.cs" />
+    <Compile Include="Page.cs">
+      <DependentUpon>RRMParaMedicalCollege.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PageGroup.cs">
+      <DependentUpon>RRMParaMedicalCollege.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Role.cs">
+      <DependentUpon>RRMParaMedicalCollege.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RoleMenu.cs">
+      <DependentUpon>RRMParaMedicalCollege.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RRMParaMedicalCollege.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RRMParaMedicalCollege.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RRMParaMedicalCollege.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RRMParaMedicalCollege.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RRMParaMedicalCollege.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RRMParaMedicalCollege.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Staff.cs">
+      <DependentUpon>RRMParaMedicalCollege.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StaffLogin.cs">
+      <DependentUpon>RRMParaMedicalCollege.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StaffLoginRole.cs">
+      <DependentUpon>RRMParaMedicalCollege.tt</DependentUpon>
+    </Compile>
+    <Compile Include="State.cs">
+      <DependentUpon>RRMParaMedicalCollege.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StateMaster.cs">
+      <DependentUpon>RRMParaMedicalCollege.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRegistration.cs">
+      <DependentUpon>RRMParaMedicalCollege.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="packages.config" />
+    <EntityDeploy Include="RRMParaMedicalCollege.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>RRMParaMedicalCollege.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="RRMParaMedicalCollege.edmx.diagram">
+      <DependentUpon>RRMParaMedicalCollege.edmx</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="RRMParaMedicalCollege.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>RRMParaMedicalCollege.edmx</DependentUpon>
+      <LastGenOutput>RRMParaMedicalCollege.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="RRMParaMedicalCollege.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>RRMParaMedicalCollege.edmx</DependentUpon>
+      <LastGenOutput>RRMParaMedicalCollege.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
