@@ -126,6 +126,7 @@ namespace ProjectAPI.Controllers.api
                 if (StaffRollId == 5) // Admin
                 {
                     response.StudentList = AdminList;
+                    response.Count = AdminList.Count;
                 }
                 else // Institute
                 {
